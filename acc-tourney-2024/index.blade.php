@@ -4,7 +4,7 @@
 
 <div class="article-<?= $custom_value ?>">
     <head>
-        <title>2024 ACC TOURNAMENT GUIDE</title>
+        <title>2026 ACC TOURNAMENT GUIDE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- https://dailyorange.com/wp-content/special/ostrom-guides/acc-tourney-2024/ - add to the beginning of all content links -->
@@ -330,5 +330,6 @@
       </article>
     </div>
   </div>
+
 
 @endsection
