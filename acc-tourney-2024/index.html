@@ -29,17 +29,18 @@
         </div>
     </header>
 
-    <!-- Hero — Full-bleed magazine cover -->
-    <section class="hero">
-        <div class="hero-image">
-            <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2024/03/06221057/acc-new-dig-scaled.jpeg" alt="">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-eyebrow">Special Edition</p>
-            <h1 class="hero-title">ACC Tournament Guide</h1>
-            <p class="hero-subtitle">Syracuse basketball's road to March — the stories behind both programs' push for their first-ever ACC title</p>
-        </div>
+    <!-- Hero  -->
+     <!-- Primary Graphic -->
+    <div style="width: 40%; max-width: 900px; margin: 0 auto; padding: 80px 10px 50px 10px;">
+    <img 
+        src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02203849/SPLASH-reduced.png" 
+        alt="2026 ACC GUIDE | THE DAILY ORANGE"
+        style="width: 100%; height: auto; display: block;"
+    />
+    </div>
+
+    <section class="special-strip">
+        <span class="special-strip-text">SPECIAL EDITION</span>
     </section>
 
     <!-- Letter from Editor — Narrow column with editorial treatment -->
@@ -64,7 +65,8 @@
     <!-- Pull Quote — Editorial break -->
     <section class="pull-quote-section">
         <div class="pull-quote">
-            <blockquote>296 - Total minutes played in March Madness by Burrows, Darius and Phelia</blockquote>
+            <blockquote>"I want to make the tournament every year. I’m not here just to be mediocre.”</blockquote>
+            <cite class="quote-credit">- Adrian Autry, SU head coach</cite>
         </div>
     </section>
 
@@ -204,9 +206,71 @@
         </div>
     </section>
 
+    <section id="photo-gallery" class="stories-section">
+        <div class="stories-container">
+            <p class="section-label-center">SEASON PHOTO GALLERY</p>
+        </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02193632/extras_AveryMagee_PE_WbbvsBC_03012026_-24-scaled.jpg" style="width:100%">
+        <div class="text">Avery Magee | Photo Editor</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02201728/extras_TaraDeluca_AEP_MBB_02142026-19-1-scaled.jpg" style="width:100%">
+        <div class="text">Tara Deluca | Asst. Photo Editor</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02193813/extras_AveryMagee_PE_WbbvsBC_03012026_-94-scaled.jpg" style="width:100%">
+        <div class="text">Avery Magee | Photo Editor</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02202124/extras_TaraDeluca_AEP_MBB_02142026-35-scaled.jpg" style="width:100%">
+        <div class="text">Tara Deluca | Asst. Photo Editor</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02193844/extras_AveryMagee_PE_WbbvsBC_03012026_-102.jpg" style="width:100%">
+        <div class="text">Avery Magee | Photo Editor</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/03/02202248/extras_TaraDeluca_AEP_MBB_02142026-155-scaled.jpg" style="width:100%">
+        <div class="text">Tara Deluca | Asst. Photo Editor</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    </section>
+
     <!-- Sponsors Section -->
     <section class="sponsors-section">
-        <h3 class="sponsors-title">Thank You To Our Sponsors</h3>
+        <h3 class="sponsors-title">Thank You To Our Sponsor</h3>
         <div class="sponsors-container">
             <a class="sponsor-logo sponsor-logo-apex" href="https://www.apexentertainment.com/syracuse/" target="_blank">
                 <img src="http://dailyorange.s3.amazonaws.com/wp-content/uploads/2026/01/29014527/ApexSYC_Vertical_Color_Logo-01-1.png" alt="Apex Entertainment">
@@ -242,6 +306,38 @@
             <p class="credits-copyright">© 2026 The Daily Orange. All rights reserved.</p>
         </div>
     </section>
+    
+
+<script> /* Taken from W3 Schools */
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
 
 </body>
 </html>
