@@ -40,7 +40,7 @@ body {
 /* ============================================
    MASTHEAD — Minimal, editorial
    ============================================ */
-.masthead {
+.masthead-for-acc {
     position: fixed;
     top: 0;
     left: 0;
@@ -55,17 +55,17 @@ body {
     z-index: 1000;
 }
 
-.masthead-logo {
+.masthead-acc-logo {
     height: 28px;
 }
 
-.masthead-meta {
+.masthead-acc-meta {
     display: flex;
     align-items: center;
     gap: 28px;
 }
 
-.masthead-date {
+.masthead-acc-date {
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -73,19 +73,19 @@ body {
     color: var(--white);
 }
 
-.masthead-social {
+.masthead-acc-social {
     display: flex;
     gap: 16px;
 }
 
-.masthead-social a {
+.masthead-acc-social a {
     color: var(--white);
     font-size: 14px;
     transition: color 0.2s;
     text-decoration: none;
 }
 
-.masthead-social a:hover {
+.masthead-acc-social a:hover {
     color: var(--yellow);
 }
 
@@ -814,11 +814,11 @@ body {
 }
 
 @media (max-width: 600px) {
-    .masthead {
+    .masthead-acc {
         padding: 0 16px;
     }
     
-    .masthead-meta {
+    .masthead-acc-meta {
         gap: 16px;
     }
     
